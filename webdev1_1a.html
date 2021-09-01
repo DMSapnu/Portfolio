@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title> HOME l DM SAPNU </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link href="portfolio.css" type="text/css" rel="stylesheet" />
+    </head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <h1 style="color:rgba(77, 73, 73, 0.856);"> DM  SAPNU </h1>
+                <p style="font-family:Aileron; color:rgb(102, 105, 105);"> PHOTOGRAPHY + GRAPHIC DESIGN </p> <br />
+                <p> <a href="home.html"> HOME + </a></p>
+               PHOTOGRAPHY GALLERY +<br /> 
+               GRAPHIC DESIGN FOLIO  <br /> 
+               <br /> 
+               <br /> 
+               <br /> 
+               <a href="about.html">ABOUT + </a> </p>
+               MEDIA <br /> 
+               CONTACT <br />
+                </div>
+                    </head>
+                    <body>
+                    
+                    <div class="slideshow-container">
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/117959604_3212959558773499_4516635638296927066_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=yEvtye7arZcAX_RG6UR&tn=U67kHvUISToucD3b&_nc_ht=scontent.fmnl4-1.fna&oh=2f4970019118c645ec115bdb01fd340c&oe=614A02E0" style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/118064413_3212960312106757_5159970990021857604_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=KWt4tIxqRvsAX9Luxuz&tn=U67kHvUISToucD3b&_nc_ht=scontent.fmnl4-2.fna&oh=111becbc366b4d3e3337d7a128838b62&oe=614B463D" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.6435-9/117688856_3212960225440099_2505135601513174820_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=fIVb9T-J0kwAX_YPOEz&_nc_ht=scontent.fmnl4-5.fna&oh=043d6e8a4ba0a590fcfa6b8919ed839f&oe=6149A0F2" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/117649997_3212960412106747_721500330594202637_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=C7pGnpl1RrgAX-MGRKf&_nc_ht=scontent.fmnl4-3.fna&oh=94f670c041932bd853556c75af5f8059&oe=614D7C84" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+            </div>
+          
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+a {
+  color: inherit;
+}
+
+* {box-sizing: border-box}
+body { margin:0px}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.container-fluid {
+  margin-top: 10px;
+  margin-left: 60px;
+  
+}
+
+.carouselExampleControls  {
+  position: relative;
+  margin: 0px;
+  height: 450px !important;
+  width: 850px !important;
+
+}
+
+.textabout {
+  text-align: justify;
+  text-justify: inter-word;
+}

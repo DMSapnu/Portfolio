@@ -1,0 +1,12 @@
+a {
+    color: inherit;
+  }
+  * {box-sizing: border-box}
+  body { margin:10px}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  .textabout {
+    text-align: justify;
+    text-justify: inter-word;
+  }
